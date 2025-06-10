@@ -6,6 +6,7 @@ Integrating demographic features into an ISS-based AI model resulted in accurate
 ## **Dataset**
 **Development & Internal Validation**
 - 121,418 trauma patients from 17 regional trauma centers in South Korea (2017–2022).
+  
 **External Validation**
 - 7,458 trauma patients from five independent trauma centers (4 in South Korea, 1 in Australia; 2022–2024).
 
