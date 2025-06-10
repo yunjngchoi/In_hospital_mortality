@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
+from imblearn.over_sampling import SMOTE
 
 def load_split(filepath):
     """
@@ -29,3 +30,12 @@ def scaling(train_x, test_x, cols):
     test_x = pd.DataFrame(test_x, columns=cols)
 
     return train_x, test_x
+
+def apply_oversampling(train_x, train_y):
+    """
+    Apply SMOTE oversampling to the training data.
+    """
+    smote = SMOTE(random_state=1)
+    train_x_resampled, train_y_resampled = smote.fit_resample(train_x, train_y)
+
+    return train_x_resampled, train_y_resampled
