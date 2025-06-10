@@ -13,9 +13,9 @@ Integrating demographic features into an ISS-based AI model resulted in accurate
 #### **Design**
 - Retrospective multicenter, multinational cohort study.
 #### **Development**
-- model was trained using Injury Severity Score (Region-1999, Region-6, Region-46) and demographic factors (age, sex).
+- Model was trained using Injury Severity Score (Region-1999, Region-6, Region-46) and demographic factors (age, sex).
 #### **Evaluation**
-- model's performance was assessed using sensitivity, specificity, accuracy, balanced accuracy, and AUROC.
+- Model's performance was assessed using sensitivity, specificity, accuracy, balanced accuracy, and AUROC.
 #### **Fairness and Generalizability**
 - Comparison of AUROC differences across demographic subgroups for fairness, and external validation for generalizability.
 
