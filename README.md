@@ -1,49 +1,70 @@
-Trauma Mortality Prediction Using ISS-Based AI Model with Demographic Scaling
-Overview
-This project presents a scalable and equitable AI model for predicting trauma-related in-hospital mortality by enhancing traditional Injury Severity Score (ISS) methods with demographic features—age and sex. The model demonstrates high predictive accuracy, reduced demographic bias, and strong generalizability across independent trauma centers in different countries. It has been developed to support clinical decision-making and improve resource allocation in trauma care settings.
+# **Trauma Mortality Prediction Using ISS-Based AI Model with Demographic Scaling**
 
-Study Setting & Dataset
-Design: Retrospective, multicenter, multinational cohort study
+## **📝 Overview**
 
-Development & Internal Testing: Conducted using a nationwide trauma registry dataset collected from 17 regional trauma centers in South Korea, spanning 2017–2022
+This project presents a scalable and equitable AI model for predicting trauma-related in-hospital mortality by enhancing traditional **Injury Severity Score (ISS)** methods with demographic features—**age** and **sex**.  
+The model demonstrates:
 
-External Validation: Performed on data from 5 independent trauma centers (4 in South Korea and 1 in Australia), covering the period 2022–2024
+- High predictive accuracy  
+- Reduced demographic bias  
+- Strong generalizability across trauma centers in different countries  
 
-Participants
-Development Dataset:
+This tool supports clinical decision-making and improves resource allocation in trauma care settings.
 
-121,418 trauma patients
+---
 
-Aged 15 years or older
+## **🏥 Study Setting & Dataset**
 
-South Korea (2017–2022)
+### **Design**
+- Retrospective, multicenter, multinational cohort study
 
-External Validation Dataset:
+### **Development & Internal Testing**
+- Data source: National trauma registry  
+- Location: **17 regional trauma centers** in South Korea  
+- Period: **2017–2022**
 
-7,458 trauma patients
+### **External Validation**
+- Location: **5 independent trauma centers**  
+  - 4 in South Korea  
+  - 1 in Australia  
+- Period: **2022–2024**
 
-From independent centers in South Korea and Australia (2022–2024)
+---
 
-Features
-The model utilizes the following input features:
+### **Participants**
 
-Injury Severity Score (ISS)
+#### Development Dataset:
+- **121,418 trauma patients**
+- Aged **15 years or older**
+- From South Korea (2017–2022)
 
-A traditional summary measure based on the most severe injuries in different body regions
+#### External Validation Dataset:
+- **7,458 trauma patients**
+- From independent trauma centers in South Korea and Australia (2022–2024)
 
-Demographic Features
+---
 
-Age (continuous or categorical)
+## **🔍 Features**
 
-Sex (binary)
+### **Input Features**
+- **Injury Severity Score (ISS)**
+  - Summarizes injury severity from different body regions
+- **Demographic Factors**
+  - `Age` (continuous or categorized)
+  - `Sex` (binary: Male/Female)
 
-Model Outputs
+### **Model Outputs**
+- Predicted probability of **in-hospital mortality**
+- **Performance Metrics**:
+  - AUROC, sensitivity, specificity, accuracy, balanced accuracy
+- **Fairness Evaluation**:
+  - AUROC differences across:
+    - Age: `<65` vs `≥65`
+    - Sex: Female vs Male
+- **Generalizability**:
+  - Validated on external datasets from independent trauma centers
 
-Predicted probability of in-hospital mortality
+---
 
-Performance metrics: AUROC, sensitivity, specificity, accuracy, balanced accuracy
-
-Fairness metrics: AUROC difference across age and sex subgroups
-
-Generalizability performance on external validation datasets
-
+## **📌 Keywords**
+Artificial intelligence · Injury Severity Score · Trauma · Mortality · Demographic factors · Prediction model · Fairness · Generalizability
