@@ -20,6 +20,7 @@ def build_model(input_size):
     x = layers.Dense(1, activation='sigmoid')(x)
     model = Model(inputs=input_data, outputs=x)
     model.compile(optimizer=optimizers.Adam(learning_rate=0.001), loss=losses.binary_crossentropy)
+    
     return model
 
 def train_model(train_x, train_y, input_size):
@@ -27,10 +28,9 @@ def train_model(train_x, train_y, input_size):
     Train a DNN model with early stopping.
     """
     model = build_dnn(input_size)
-    early_stopping = EarlyStopping(monitor='loss', patience=10,
-                                   restore_best_weights=True, min_delta=0.001)
-    model.fit(train_x, train_y, epochs=50, batch_size=64,
-              callbacks=[early_stopping], verbose=0)
+    early_stopping = EarlyStopping(monitor='loss', patience=10, restore_best_weights=True, min_delta=0.001)
+    model.fit(train_x, train_y, epochs=50, batch_size=64, callbacks=[early_stopping], verbose=0)
+    
     return model
 
 def evaluate_model(model, data, label):
