@@ -10,14 +10,13 @@ Integrating demographic features into an ISS-based AI model resulted in accurate
 - 7,458 trauma patients from five independent trauma centers (4 in South Korea, 1 in Australia; 2022–2024).
 
 ## **Methods**
-#### **Design**
-- Retrospective multicenter, multinational cohort study.
 #### **Development**
 - Model was trained using Injury Severity Score (Region-1999, Region-6, Region-46) and demographic factors (age, sex).
 #### **Evaluation**
 - Model's performance was assessed using sensitivity, specificity, accuracy, balanced accuracy, and AUROC.
 #### **Fairness and Generalizability**
-- Comparison of AUROC differences across demographic subgroups for fairness, and external validation for generalizability.
+- Model's fairness was assessed by comparing AUROC differences across demographic subgroups
+- Model's generalizability was evaluated through external validation.
 
 ## **Results**
 - Internal Validation AUROC : 0.934
