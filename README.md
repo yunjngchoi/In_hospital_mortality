@@ -13,10 +13,7 @@ This tool supports clinical decision-making and improves resource allocation in 
 
 ---
 
-## **Study Setting & Dataset**
-
-### **Design**
-- Retrospective, multicenter, multinational cohort study
+## **Dataset**
 
 ### **Development & Internal Validation**
 - **121,418 trauma patients**
@@ -28,16 +25,15 @@ This tool supports clinical decision-making and improves resource allocation in 
 
 ---
 
-## **Features**
+## **Feature**
 
-### **Input Features**
+### **Input**
 - **Injury Severity Score (ISS)**
   - Summarizes injury severity from different body regions
 - **Demographic Factors**
-  - `Age` (continuous or categorized)
-  - `Sex` (binary: Male/Female)
+  - age and sex
 
-### **Model Outputs**
+### **Output**
 - Predicted probability of **in-hospital mortality**
 - **Performance Metrics**:
   - AUROC, sensitivity, specificity, accuracy, balanced accuracy
