@@ -1,4 +1,3 @@
-# Imports
 import tensorflow as tf
 from tensorflow.keras import layers, regularizers, optimizers, losses
 from tensorflow.keras.models import Model
