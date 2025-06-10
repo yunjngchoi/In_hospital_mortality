@@ -18,11 +18,7 @@ The goal of this study is to assess whether scaling an ISS-based AI model with d
 
 ## **Key Outcomes**
 - **Primary Outcomes**: Predictive performance metrics for trauma-related in-hospital mortality, including:
-  - Sensitivity
-  - Specificity
-  - Accuracy
-  - Balanced accuracy
-  - Area Under the Receiver Operating Characteristic Curve (AUROC)
+  - Sensitivity, Specificity, Accuracy, Balanced accuracy, Area Under the Receiver Operating Characteristic Curve (AUROC)
   
 - **Secondary Outcomes**:
   - Model fairness (assessed by comparing AUROC across demographic subgroups)
@@ -38,3 +34,10 @@ The goal of this study is to assess whether scaling an ISS-based AI model with d
 ## **Conclusions**
 Integrating demographic features into an ISS-based AI model resulted in accurate, fair, and generalizable predictions of trauma-related in-hospital mortality. This model has the potential to significantly enhance clinical decision-making, optimize trauma care resource allocation, and improve patient outcomes globally.
 
+## **File Structure**
+
+1. **ais46_model_dnn.keras**: Contains the proposed DNN model for predicting trauma-related in-hospital mortality based on the ISS and demographic features (age and sex).
+
+2. **data.py**: Handles loading, splitting, scaling, and oversampling of the dataset using MinMaxScaler and SMOTE for model training.
+
+3. **model.py**: Defines and trains a DNN model with two hidden layers, evaluates the model using various metrics (accuracy, specificity, sensitivity, etc.), and applies early stopping during training.
