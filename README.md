@@ -10,7 +10,7 @@ Integrating demographic features into an ISS-based AI model resulted in accurate
 - 7,458 trauma patients from five independent trauma centers (4 in South Korea, 1 in Australia; 2022–2024).
 
 ## **Methods**
-### **Design**
+##### **Design**
 - Retrospective multicenter, multinational cohort study.
 ### **Development**
 - model was trained using Injury Severity Score (Region-1999, Region-6, Region-46) and demographic factors (age, sex).
