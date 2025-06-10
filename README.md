@@ -13,18 +13,16 @@ Integrating demographic features into an ISS-based AI model resulted in accurate
 **Design**
 - Retrospective multicenter, multinational cohort study.
 **Development**
-- AI-based model was trained using Injury Severity Score (Region-1999, Region-6, Region-46) and demographic factors (age, sex).
+- model was trained using Injury Severity Score (Region-1999, Region-6, Region-46) and demographic factors (age, sex).
 **Evaluation**
-- The model's performance was assessed using sensitivity, specificity, accuracy, balanced accuracy, and AUROC. 
+- model's performance was assessed using sensitivity, specificity, accuracy, balanced accuracy, and AUROC. 
 **Fairness and Generalizability**
 - Comparison of AUROC differences across demographic subgroups for fairness, and external validation for generalizability.
 
 ## **Results**
 - Internal Validation AUROC : 0.934
-- External Validation AUROC : Range 0.902–0.920
-- Fairness AUROC difference:
-  - Age : our model = 0.068 vs ISS = 0.091
-  - Sex : our model = 0.021 vs ISS = 0.046
+- External Validation AUROC : 0.902–0.920
+- Fairness AUROC difference : Age (our model = 0.068 vs ISS = 0.091), Sex (our model = 0.021 vs ISS = 0.046)
 
 ## **File Structure**
 - `ais46_model_dnn.keras`: Our proposed DNN model for predicting in-hospital mortality based on Region-46 and demographic features.
